@@ -7,10 +7,10 @@ function Header() {
   return (
     <HeaderWrapper>
       <SvgLogo height="36" width="177" />
-      <GeneratePallette>
+      {/* <GeneratePallette>
         <SvgColorPallette width="24px" height="24px" />
         generate pallette
-      </GeneratePallette>
+      </GeneratePallette> */}
     </HeaderWrapper>
   );
 }

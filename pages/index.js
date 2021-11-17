@@ -1,19 +1,26 @@
 import Head from 'next/head';
 import styled from 'styled-components';
-import { Header } from '../src/components';
+import { Header, ImageGrid, MainText } from '../src/components';
+import { useQuery } from 'react-query';
+import { getPhotos } from '../src/services/getPhotos';
 
 const MainWrapper = styled.main`
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 5% 0;
 `;
 const BottomArea = styled.section`
   display: flex;
-  justify-content: space-between;
+  gap: 32px;
 `;
 
 export default function Home() {
+  const { isLoading, error, data } = useQuery('photos', getPhotos);
+
   return (
-    <div>
+    <>
       <Head>
         <title>KolorBook</title>
         <meta name="description" content="KolorBook Application" />
@@ -22,8 +29,11 @@ export default function Home() {
 
       <MainWrapper>
         <Header />
-        <BottomArea></BottomArea>
+        <BottomArea>
+          <MainText textBig="Choose Any Pic" textSmall="from the gallery" />
+          <ImageGrid />
+        </BottomArea>
       </MainWrapper>
-    </div>
+    </>
   );
 }

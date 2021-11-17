@@ -9,25 +9,25 @@ class MyDocument extends Document {
             rel="preload"
             href="/fonts/Voyage-Bold.otf"
             as="font"
-            crossOrigin="anonymous"
+            crossOrigin=""
           ></link>
           <link
             rel="preload"
             href="/fonts/Voyage-Regular.otf"
             as="font"
-            crossOrigin="anonymous"
+            crossOrigin=""
           ></link>
           <link
             rel="preload"
             href="/fonts/Klarheit Grotesk Regular.ttf"
             as="font"
-            crossOrigin="anonymous"
+            crossOrigin=""
           ></link>
           <link
             rel="preload"
             href="/fonts/Klarheit Grotesk Bold.ttf"
             as="font"
-            crossOrigin="anonymous"
+            crossOrigin=""
           ></link>
         </Head>
         <body>
