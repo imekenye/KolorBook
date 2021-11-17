@@ -1,0 +1,28 @@
+{
+    "images": [
+        {
+            "id":1,
+            "src":"/static/image01.jpeg"
+        },
+        {
+            "id":2,
+            "src":"/static/image02.jpeg"
+        },
+        {
+            "id":3,
+            "src":"/static/image03.jpeg"
+        },
+        {
+            "id":4,
+            "src":"/static/image04.jpeg"
+        },
+        {
+            "id":5,
+            "src":"/static/image05.jpeg"
+        },
+        {
+            "id":6,
+            "src":"/static/image06.jpeg"
+        }
+    ]
+}
