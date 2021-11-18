@@ -4,6 +4,8 @@ import { SingleImageWrapper } from './singleimage.styled';
 import { useColor } from '../../hooks/useColor';
 import { useRouter } from 'next/router';
 
+// lazy loading business logic
+
 const keyStr =
   'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
 
@@ -18,6 +20,8 @@ const rgbDataURL = (r, g, b) =>
     triplet(0, r, g) + triplet(b, 255, 255)
   }/yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==`;
 
+// end of lazy loading logic
+
 function SingleImage({ imgSrc = '/static/image01.jpeg' }) {
   const [colors, getColors] = useColor();
 
@@ -28,7 +32,6 @@ function SingleImage({ imgSrc = '/static/image01.jpeg' }) {
     router.push('/colorbook');
   };
 
-  console.log(colors);
   return (
     <SingleImageWrapper onClick={() => handleImageClick(imgSrc)}>
       <Image

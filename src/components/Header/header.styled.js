@@ -18,7 +18,8 @@ export const GeneratePallette = styled.button`
   font-weight: normal;
   font-size: 12px;
   line-height: 17px;
-  letter-spacing: 0.19em;
+  letter-spacing: 0.12em;
+  cursor: pointer;
 
   svg {
     margin-right: 8px;

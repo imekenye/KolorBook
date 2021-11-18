@@ -1,5 +1,35 @@
+@font-face {
+  font-family: 'Klarheit Grotesk';
+  src: url('/fonts/Klarheit Grotesk Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Klarheit Grotesk';
+  src: url('/fonts/Klarheit Grotesk Bold.ttf');
+  font-style: bold;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Voyage';
+  src: url('/fonts/Voyage-Bold.otf');
+  font-style: bold;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Voyage';
+  src: url('/fonts/Voyage-Regular.otf');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 html,
 body {
+  position: relative;
   padding: 0;
   margin: 0;
   font-family: Klarheit Grotesk, -apple-system, BlinkMacSystemFont, Segoe UI,
@@ -11,6 +41,9 @@ body {
   height: 100%;
 }
 
+#__next {
+  height: inherit;
+}
 a {
   color: inherit;
   text-decoration: none;
