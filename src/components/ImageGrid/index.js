@@ -5,8 +5,8 @@ import dataLocal from '../../data/images.json';
 import { useQuery } from 'react-query';
 import { getPhotos } from '../../services/getPhotos';
 
-function ImageGrid() {
-  const { isLoading, error, data } = useQuery('photos', getPhotos);
+function ImageGrid({ data }) {
+  // const { isLoading, error, data } = useQuery('photos', getPhotos);
 
   const renderImages = () => {
     if (data) {
