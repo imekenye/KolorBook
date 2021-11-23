@@ -1,7 +1,6 @@
 import React from 'react';
 import { Canvas, Header, MainText, Palette } from '../src/components';
 import styled from 'styled-components';
-import { BottomArea } from '.';
 
 const ColorBookWrapper = styled.div`
   display: flex;
@@ -15,6 +14,20 @@ const ColorBookWrapper = styled.div`
   }
   @media (max-width: 320px) {
     width: 100%;
+  }
+`;
+
+const BottomArea = styled.section`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  @media (min-width: 768px) and (max-width: 1024px) {
+    flex-direction: column;
+    height: 100vh;
+  }
+  @media (min-width: 320px) and (max-width: 480px) {
+    display: block;
+    height: 100vh;
   }
 `;
 
