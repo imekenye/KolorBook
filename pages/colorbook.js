@@ -9,6 +9,15 @@ const ColorBookWrapper = styled.div`
   justify-content: space-between;
   height: 100%;
   padding: 5% 0;
+  width: 90%;
+  margin: 0 auto;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    display: block;
+  }
+  @media (max-width: 320px) {
+    width: 100%;
+  }
 `;
 
 function ColorBook() {

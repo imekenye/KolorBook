@@ -6,6 +6,9 @@ export const ImageGridWrapper = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   flex-grow: 2;
+  @media (max-width: 768px) {
+    height: 70vh !important;
+  }
 
   &div:nth-child(1) {
     grid-column: 1/2;

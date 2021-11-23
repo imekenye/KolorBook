@@ -10,13 +10,27 @@ const MainWrapper = styled.main`
   justify-content: space-between;
   height: 100%;
   padding: 5% 0;
+  width: 90%;
+  margin: 0 auto;
+  @media (max-width: 768px) {
+    display: block;
+  }
 `;
 export const BottomArea = styled.section`
   display: flex;
+  flex-wrap: wrap;
   gap: 32px;
+  @media (min-width: 768px) and (max-width: 1024px) {
+    flex-direction: column;
+    height: 100vh;
+  }
+  @media (min-width: 320px) and (max-width: 480px) {
+    display: block;
+    height: 100vh;
+  }
 `;
 
-export default function Home({ photos }) {
+export default function Home() {
   // const { isLoading, error, data } = useQuery('photos', getPhotos, {
   //   initialData: photos,
   // });
@@ -33,7 +47,7 @@ export default function Home({ photos }) {
         <Header />
         <BottomArea>
           <MainText textBig="Choose Any Pic" textSmall="from the gallery" />
-          <ImageGrid data={data} />
+          <ImageGrid />
         </BottomArea>
       </MainWrapper>
     </>
