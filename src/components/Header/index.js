@@ -1,9 +1,15 @@
+import { useState } from 'react';
 import { useRouter } from 'next/router';
 import SvgLogo from '../icons/Logo';
-import { GeneratePallette, HeaderWrapper } from './header.styled';
+import { Bars, GeneratePallette, HeaderWrapper } from './header.styled';
 import SvgPhoto from '../icons/Photo';
+import Navigation from '../Navigation';
+import SideMenu from '../SideMenu/index';
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMenuOpen = () => setIsMenuOpen(!isMenuOpen);
   const router = useRouter();
   return (
     <HeaderWrapper>
@@ -13,8 +19,11 @@ function Header() {
         width="177"
         onClick={() => router.push('/')}
       />
+      <Bars onClick={() => setIsMenuOpen(true)} />
+      {isMenuOpen && <SideMenu setIsMenuOpen={setIsMenuOpen} />}
+      {router.pathname === '/' && <Navigation />}
       {router.pathname === '/colorbook' && (
-        <GeneratePallette onClick={() => router.push('/')}>
+        <GeneratePallette onClick={() => router.push('/main-app')}>
           <SvgPhoto width="24px" height="24px" />
           Choose another photo
         </GeneratePallette>

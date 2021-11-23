@@ -1,8 +1,10 @@
 import styled from 'styled-components';
+import SvgMenu from '../icons/Menu';
 
 export const HeaderWrapper = styled.div`
   display: flex;
   justify-content: space-between;
+  position: relative;
 `;
 export const GeneratePallette = styled.button`
   display: flex;
@@ -29,5 +31,27 @@ export const GeneratePallette = styled.button`
 
   svg {
     margin-right: 8px;
+  }
+`;
+
+export const Bars = styled(SvgMenu)`
+  display: none;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2rem;
+    cursor: pointer;
   }
 `;
