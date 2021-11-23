@@ -17,10 +17,10 @@ export const BottomArea = styled.section`
 `;
 
 export default function Home({ photos }) {
-  const { isLoading, error, data } = useQuery('photos', getPhotos, {
-    initialData: photos,
-  });
-  console.log(data);
+  // const { isLoading, error, data } = useQuery('photos', getPhotos, {
+  //   initialData: photos,
+  // });
+  // console.log(data);
   return (
     <>
       <Head>
@@ -40,8 +40,8 @@ export default function Home({ photos }) {
   );
 }
 
-export const getServerSideProps = async () => {
-  const photos = await getPhotos();
-  console.log(photos);
-  return { props: { photos } };
-};
+// export const getServerSideProps = async () => {
+//   const photos = await getPhotos();
+//   console.log(photos);
+//   return { props: { photos } };
+// };
