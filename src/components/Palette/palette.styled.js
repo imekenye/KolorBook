@@ -12,6 +12,7 @@ export const PaletteWrapper = styled.div`
   @media (min-width: 320px) and (max-width: 480px) {
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 26px;
   }
 `;
 export const PaletteBox = styled.div`
@@ -24,6 +25,6 @@ export const PaletteBox = styled.div`
   } */
 
   @media (min-width: 320px) and (max-width: 480px) {
-    width: 50px;
+    width: 45px;
   }
 `;

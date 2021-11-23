@@ -18,5 +18,6 @@ export const CanvasWrapper = styled.div`
   @media (min-width: 320px) and (max-width: 480px) {
     max-height: 100vh;
     max-width: 100%;
+    margin-top: 26px;
   }
 `;

@@ -20,6 +20,12 @@ export const GeneratePallette = styled.button`
   line-height: 17px;
   letter-spacing: 0.12em;
   cursor: pointer;
+  @media (min-width: 320px) and (max-width: 480px) {
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    width: 300px;
+    margin-left: 16px;
+  }
 
   svg {
     margin-right: 8px;

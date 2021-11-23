@@ -10,8 +10,7 @@ const MainWrapper = styled.main`
   justify-content: space-between;
   height: 100%;
   padding: 5% 0;
-  width: 90%;
-  margin: 0 auto;
+
   @media (max-width: 768px) {
     display: block;
   }

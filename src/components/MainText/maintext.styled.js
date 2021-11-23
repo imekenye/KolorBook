@@ -20,6 +20,11 @@ export const TextBig = styled.h1`
   font-weight: normal;
   font-size: 96px;
   line-height: 90px;
+  @media (min-width: 320px) and (max-width: 480px) {
+    font-size: 46px;
+    line-height: 40px;
+    margin-top: 26px;
+  }
 `;
 export const TextSmall = styled.p`
   margin-top: 30px;
@@ -30,4 +35,8 @@ export const TextSmall = styled.p`
   line-height: 22px;
   letter-spacing: 0.36em;
   text-transform: uppercase;
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    margin-top: 16px;
+  }
 `;
