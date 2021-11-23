@@ -6,18 +6,20 @@ import { useQuery } from 'react-query';
 import { getPhotos } from '../../services/getPhotos';
 
 function ImageGrid({ data }) {
-  // const { isLoading, error, data } = useQuery('photos', getPhotos);
-
   const renderImages = () => {
-    if (data) {
-      return data.map((image) => (
-        <SingleImage key={image.id} imgSrc={image.urls['small']} />
-      ));
-    } else if (error) {
-      return dataLocal.images?.map((image) => (
-        <SingleImage key={image.id} imgSrc={image.urls['small']} />
-      ));
-    }
+    // if (data) {
+    //   return data.map((image) => (
+    //     <SingleImage key={image.id} imgSrc={image.urls['small']} />
+    //   ));
+    // } else if (error) {
+    //   return dataLocal.images?.map((image) => (
+    //     <SingleImage key={image.id} imgSrc={image.urls['small']} />
+    //   ));
+    // }
+
+    return dataLocal.images?.map((image) => (
+      <SingleImage key={image.id} imgSrc={image.src} />
+    ));
   };
   return <ImageGridWrapper>{renderImages()}</ImageGridWrapper>;
 }
