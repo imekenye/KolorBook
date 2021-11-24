@@ -13,6 +13,10 @@ export const AboutWrapper = styled.div`
     width: 40%;
     text-align: center;
     margin: 0 auto;
+
+    @media (min-width: 320px) and (max-width: 480px) {
+      width: 90%;
+    }
   }
 `;
 

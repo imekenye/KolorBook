@@ -1,8 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
-import { Close, SideMenuWrapper } from './sidemenu.styled';
+import { Close, SideMenuWrapper, Button } from './sidemenu.styled';
+import { useRouter } from 'next/router';
 
 const SideMenu = ({ setIsMenuOpen }) => {
+  const router = useRouter();
   return (
     <SideMenuWrapper onClick={() => setIsMenuOpen(false)}>
       <Close onClick={() => setIsMenuOpen(false)} />
@@ -18,6 +20,7 @@ const SideMenu = ({ setIsMenuOpen }) => {
       <Link href="/">
         <a onClick={() => window.location.replace('/#tutorial')}>Tutorial</a>
       </Link>
+      <Button onClick={() => router.push('/main-app')}> Go to app</Button>
     </SideMenuWrapper>
   );
 };

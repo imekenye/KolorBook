@@ -13,7 +13,7 @@ export const DisplayTitleWrapper = styled.div`
     line-height: 115px;
 
     @media (min-width: 320px) and (max-width: 480px) {
-      font-size: 56px;
+      font-size: 38px;
     }
 
     &::before {

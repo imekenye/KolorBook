@@ -39,6 +39,7 @@ body {
   width: 90%;
   margin: 0 auto;
   height: 100%;
+  overflow-x: hidden;
 }
 
 #__next {

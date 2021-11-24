@@ -11,7 +11,7 @@ export const SideMenuWrapper = styled.div`
   z-index: 10;
   background: white;
   height: 100vh;
-  padding: 10%;
+  padding: 30% 10% 10% 10%;
 
   a {
     position: relative;
@@ -41,4 +41,13 @@ export const Close = styled(SvgMenuClose)`
   right: 50px;
   top: 50px;
   font-size: 3rem;
+`;
+
+export const Button = styled.button`
+  margin-top: 20px;
+  width: 150px;
+  height: 32px;
+  background: black;
+  color: white;
+  border: none;
 `;

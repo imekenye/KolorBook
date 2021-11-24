@@ -9,4 +9,8 @@ export const FeaturesList = styled.div`
   margin: 0 auto;
   justify-content: space-between;
   margin-top: 10%;
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    width: 90%;
+  }
 `;

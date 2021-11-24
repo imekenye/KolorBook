@@ -6,6 +6,11 @@ export const TutorialWrapper = styled.div`
   width: 40%;
   margin: 0 auto;
 
+  @media (min-width: 320px) and (max-width: 480px) {
+    width: 90%;
+    margin-top: 25%;
+  }
+
   ol {
     margin-top: 10%;
   }
