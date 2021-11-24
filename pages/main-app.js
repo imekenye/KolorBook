@@ -9,7 +9,7 @@ const MainWrapper = styled.main`
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 5% 0;
+  padding: 20% 0 5% 0;
 
   @media (max-width: 768px) {
     display: block;

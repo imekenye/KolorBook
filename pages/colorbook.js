@@ -7,7 +7,7 @@ const ColorBookWrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 5% 0;
+  padding: 20% 0 5% 0;
 
   @media (min-width: 768px) and (max-width: 1024px) {
     display: block;

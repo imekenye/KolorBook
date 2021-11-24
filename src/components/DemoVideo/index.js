@@ -7,7 +7,14 @@ const DemoVideo = () => {
     <DemoVideoWrapper id="demo">
       <DisplayTitle title="Demo Video" />
 
-      <video autoPlay loop width="100%" height="100%" name="Video Name">
+      <video
+        autoPlay
+        controls
+        loop
+        width="100%"
+        height="100%"
+        name="Video Name"
+      >
         <source src="/static/kolorbook2.mov" />
       </video>
     </DemoVideoWrapper>
