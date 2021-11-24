@@ -1,34 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# KolorBook Web Application
 
-## Getting Started
+This is a NextJs/React Application that allows users to create a color palette through images and fill a no-color svg to a colorfull image.
 
-First, run the development server:
+## Author name
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Isaiah Mekenye
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Description
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+This is a NextJs/React Application that allows users to create a color palette through images and fill a no-color svg to a colorfull image.It includes a landing page with instructions on how to use it and the application itself.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Technologies Used
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+NextJs(React Framework), Styled Components for styling, Recoil for statemanagment.
 
-## Learn More
+## Application requirements
 
-To learn more about Next.js, take a look at the following resources:
+1. Ensure you have nodejs installed in your computer.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Project setup instruction/ installations
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. From the repository, click on code dropdown in the global sidebar.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+2. Copy the clone command either http or ssh according to your preference.
+
+3.  From a terminal window, change to the local directory where you want to clone your repository.
+
+or just use this
+
+`$ git clone https://github.com/imekenye/KolorBook.git`
+
+4. Run the following command first to install modules;
+
+`$ npm install`
+
+5. Run this command to open the app
+
+`$ npm run dev`
+
+
+## Deployment
+
+This App was deployed on vercel.To deploy it:
+
+1. Go to your vercel dashboard after signing in or signup.
+2. select new project button
+3. Import from your github according to your project name
+4. Wait for it to build and you will have a live link if the build has no error.
+                 |
+
+
+
+## Live link
+
+Use this link to see the web-app
+
+(<https://kolor-book.vercel.app/>)
+
+## Contact Information
+
+Email-(ismekenye@gmail.com)
