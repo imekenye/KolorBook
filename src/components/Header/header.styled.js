@@ -5,6 +5,16 @@ export const HeaderWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   position: relative;
+
+  position: fixed;
+  top: 2rem;
+  width: 80%;
+  /* padding: 0 5%; */
+  z-index: 11;
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    top: 1rem;
+  }
 `;
 export const GeneratePallette = styled.button`
   display: flex;
@@ -44,6 +54,7 @@ export const Bars = styled(SvgMenu)`
     right: 0;
     font-size: 2rem;
     cursor: pointer;
+    z-index: 11;
   }
 
   @media (min-width: 320px) and (max-width: 480px) {

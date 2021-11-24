@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import SvgLogo from '../icons/Logo';
 import { Bars, GeneratePallette, HeaderWrapper } from './header.styled';
@@ -9,8 +9,8 @@ import SideMenu from '../SideMenu/index';
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const handleMenuOpen = () => setIsMenuOpen(!isMenuOpen);
   const router = useRouter();
+
   return (
     <HeaderWrapper>
       <SvgLogo
@@ -19,7 +19,7 @@ function Header() {
         width="177"
         onClick={() => router.push('/')}
       />
-      <Bars onClick={() => setIsMenuOpen(true)} />
+      {router.pathname === '/' && <Bars onClick={() => setIsMenuOpen(true)} />}
       {isMenuOpen && <SideMenu setIsMenuOpen={setIsMenuOpen} />}
       {router.pathname === '/' && <Navigation />}
       {router.pathname === '/colorbook' && (

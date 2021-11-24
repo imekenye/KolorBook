@@ -5,6 +5,7 @@ import { useRouter } from 'next/router';
 
 const SideMenu = ({ setIsMenuOpen }) => {
   const router = useRouter();
+  console.log(router);
   return (
     <SideMenuWrapper onClick={() => setIsMenuOpen(false)}>
       <Close onClick={() => setIsMenuOpen(false)} />

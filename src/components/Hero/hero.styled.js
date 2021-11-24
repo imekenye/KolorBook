@@ -3,7 +3,8 @@ import styled from 'styled-components';
 export const HeroWrapper = styled.div`
   display: flex;
   height: 90%;
-  padding: 3% 0;
+  padding: 10% 0 3% 0;
+
   @media (min-width: 768px) and (max-width: 1024px) {
     flex-direction: column;
     width: 100%;
