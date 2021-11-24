@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const PaletteWrapper = styled.div`
   display: flex;
@@ -15,7 +16,7 @@ export const PaletteWrapper = styled.div`
     margin-top: 26px;
   }
 `;
-export const PaletteBox = styled.div`
+export const PaletteBox = styled(motion.div)`
   width: 96px;
   height: 50px;
   background: ${(props) => props.background};

@@ -11,6 +11,7 @@ const Palette = () => {
       {colors &&
         colors.map((color) => (
           <PaletteBox
+            whileTap={{ scale: 0.9 }}
             onClick={() => setCurrentColor(color)}
             key={color}
             background={color}

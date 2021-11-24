@@ -16,6 +16,9 @@ const Canvas = () => {
   };
   return (
     <CanvasWrapper>
+      <p style={{ background: currentColor, color: 'white' }}>
+        Current Color:{currentColor}
+      </p>
       <SvgArtOne
         width="70%"
         height="70%"
