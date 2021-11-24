@@ -22,6 +22,11 @@ export const SideMenuWrapper = styled.div`
     line-height: 115px;
     cursor: pointer;
 
+    @media (min-width: 320px) and (max-width: 480px) {
+      font-size: 38px;
+      line-height: 48px;
+    }
+
     &:hover {
       &::before {
         content: '';
