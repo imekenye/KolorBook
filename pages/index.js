@@ -3,17 +3,12 @@ import styled from 'styled-components';
 import {
   About,
   DemoVideo,
-  DisplayTitle,
   Features,
   Header,
   Hero,
-  ImageGrid,
-  MainText,
   Meet,
   Tutorial,
 } from '../src/components';
-import { useQuery } from 'react-query';
-import { getPhotos } from '../src/services/getPhotos';
 
 const MainWrapper = styled.main`
   display: block;
@@ -30,10 +25,6 @@ const MainWrapper = styled.main`
 `;
 
 export default function Home() {
-  // const { isLoading, error, data } = useQuery('photos', getPhotos, {
-  //   initialData: photos,
-  // });
-  // console.log(data);
   return (
     <>
       <Head>
@@ -54,9 +45,3 @@ export default function Home() {
     </>
   );
 }
-
-// export const getServerSideProps = async () => {
-//   const photos = await getPhotos();
-//   console.log(photos);
-//   return { props: { photos } };
-// };

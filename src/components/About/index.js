@@ -1,7 +1,6 @@
 import React from 'react';
 import { DisplayTitle } from '..';
 import { AboutWrapper, AboutImage } from './about.styled';
-import Image from 'next/image';
 
 const About = () => {
   return (
